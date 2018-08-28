@@ -1,5 +1,5 @@
 dependencies: \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/React/Modules/RCTUIManagerUtils.m \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/React/Modules/RCTUIManagerUtils.h \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/React/Base/RCTAssert.h \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/React/Base/RCTDefines.h
+  /Users/dev/Documents/nail-art/node_modules/react-native/React/Modules/RCTUIManagerUtils.m \
+  /Users/dev/Documents/nail-art/node_modules/react-native/React/Modules/RCTUIManagerUtils.h \
+  /Users/dev/Documents/nail-art/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/dev/Documents/nail-art/node_modules/react-native/React/Base/RCTDefines.h

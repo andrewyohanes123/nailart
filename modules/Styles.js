@@ -104,5 +104,15 @@ export default StyleSheet.create({
     backgroundColor : 'white',
     borderRadius : 8,
     position : 'relative'
+  },
+  modal : {
+    // justifyContent : 'center',
+    // alignItems: 'center',
+  },
+  rewardModal : {
+    height : '75%',
+    width : '90%',
+    borderRadius: 8,
+    overflow : 'hidden'
   }
 });

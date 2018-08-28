@@ -1,10 +1,10 @@
 dependencies: \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/Utils.cpp \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/Utils.h \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGNode.h \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGLayout.h \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/Yoga-internal.h \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.h \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h \
-  /Applications/XAMPP/xamppfiles/htdocs/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGStyle.h
+  /Users/dev/Documents/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/Utils.cpp \
+  /Users/dev/Documents/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/Utils.h \
+  /Users/dev/Documents/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGNode.h \
+  /Users/dev/Documents/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGLayout.h \
+  /Users/dev/Documents/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/Yoga-internal.h \
+  /Users/dev/Documents/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.h \
+  /Users/dev/Documents/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
+  /Users/dev/Documents/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h \
+  /Users/dev/Documents/nail-art/node_modules/react-native/ReactCommon/yoga/yoga/YGStyle.h

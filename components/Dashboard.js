@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react'
-import { ScrollView, Modal,TextInput, Text, View, Picker, TouchableOpacity, TouchableHighlight } from 'react-native';
+import { ScrollView,TextInput, Text, View, Picker, TouchableOpacity, TouchableHighlight } from 'react-native';
 import {createBottomTabNavigator, createMaterialTopTabNavigator, SafeAreaView} from 'react-navigation';
 import Settings from './Settings';
+import Modal from 'react-native-modalbox';
 import Icon from 'react-native-vector-icons/Ionicons';
 import styles from '../modules/Styles';
 import Points from './Points';
@@ -15,7 +16,7 @@ class Dashboard extends Component {
       <ScrollView style={{
         padding: 10,
         flex : 1,
-        backgroundColor : '#f1f2f6',
+        backgroundColor : '#dfe6e9',
         padding : 15
       }} >
         <View style={{flex: 1, marginBottom: 5, backgroundColor:'white', borderRadius : 8, padding: 15}} >
@@ -107,7 +108,9 @@ class Completed extends React.Component {
           completed_orders.map((order, index) => {
             return (<TouchableHighlight underlayColor="lightgrey" key={index} style={styles.orderMenuContainer}
             onPress={() => {
-              this.setState({modal : true, modal_data : order});
+              this.setState({modal_data : order}, () => {
+                this.refs.detailModal.open()
+              });
             }}
             >
             <Fragment>
@@ -129,35 +132,26 @@ class Completed extends React.Component {
         }} >
           <Text style={{fontSize:20}} >Completed</Text>
         </View>}
-        <SafeAreaView>
-          <Modal
-          animationType="slide"
-          transparent={false}
-          visible={this.state.modal}
-          onRequestClose={() => {
-            alert('T E R T U T U P . . .');
+        <Modal
+          ref={"detailModal"}
+          swipeToClose={true}
+          onClosed={() => {
+            console.log('T E R T U T U P . . .');
           }}
-          style={{
-            width : '80%',
-            height : '50%'
-          }}
-          >
-          <View style={{ padding : 10, flex : 1}} >
-            <Text>{modal_data.name}</Text>
-            <View style={{ backgroundColor : 'grey', borderRadius : 8, flex : 1, justifyContent : "center", alignItems : "center" }} >
-              <Text style={{ fontSize : 20, color: 'lightgrey' }} >{`Rp. ${modal_data.price},-`}</Text>
-            </View>
-            <View style={{ flex : 4, marginTop : 8 }} >
-            <Text style={{ backgroundColor:'grey', width : '100%', borderRadius : 8, padding : 8, borderWidth : 1, borderColor : 'grey', }} >{modal_data.description}</Text>
-            </View>          
-            <TouchableOpacity onPress={()=>{
-              this.setState({modal : false, modal_data : {}})
-            }} style={styles.btn} >
-              <Text>Close</Text>
-            </TouchableOpacity>
+          style={styles.rewardModal}
+        >
+        <View style={{ padding : 10, flex : 1}} >
+          <Text style={{ margin : 15 }} >{modal_data.name}</Text>
+          <View style={{ backgroundColor : 'grey', borderRadius : 8, flex : 1, justifyContent : "center", alignItems : "center" }} >
+            <Text style={{ fontSize : 20, color: 'lightgrey' }} >{`Rp. ${modal_data.price},-`}</Text>
           </View>
-          </Modal>
-        </SafeAreaView>
+          <View style={{ flex : 4, marginTop : 8 }} >
+          <View style={{ flex :1, height : '100%', backgroundColor:'#f1f2f6', width : '100%', borderRadius : 8, padding : 8, }}>
+            <Text>{modal_data.description}</Text>
+          </View>
+          </View>
+        </View>
+        </Modal>
       </Fragment>
     )
   }
@@ -194,6 +188,10 @@ const TopBarNavigator = createMaterialTopTabNavigator({
     inactiveTintColor : "rgb(90,200,250)",
     style : {
       backgroundColor : "white",
+      borderRadius : 8,
+      marginLeft : 8,
+      marginRight : 8,
+      marginTop : 5
     },
     indicatorStyle : {
       height: 0

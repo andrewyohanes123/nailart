@@ -15,7 +15,7 @@ class App extends React.Component {
       // <StackNavigate style={{
       //   height : 0
       // }} />
-      <SafeAreaView style={{flex:1, backgroundColor : '#f1f2f6'}} >
+      <SafeAreaView style={{flex:1, backgroundColor : '#dfe6e9'}} >
         <TabNavigate />
       </SafeAreaView>      
     )    
